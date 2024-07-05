@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courtroom Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="role-selection">
+        <h2>Select Your Role</h2>
+        <button onclick="joinRole('Judge')">Judge</button>
+        <button onclick="joinRole('Defendant 1')">Defendant 1</button>
+        <button onclick="joinRole('Defendant 2')">Defendant 2</button>
+        <button onclick="joinRole('Spectator')">Spectator</button>
+    </div>
+    <div id="courtroom" style="display:none;">
+        <div id="judge"></div>
+        <div id="defendant1"></div>
+        <div id="defendant2"></div>
+        <div id="spectators"></div>
+        <div id="chat-box">
+            <input type="text" id="chat-input" placeholder="Type your message here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
